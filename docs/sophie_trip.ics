@@ -555,8 +555,8 @@ BEGIN:VEVENT
 UID:transport-00-sydney-shanghai@sophie-trip
 DTSTAMP:20260620T000000Z
 SUMMARY:Sophie Trip - Sydney - Shanghai (Flight)
-DTSTART;TZID=Australia/Sydney:20260622T110000
-DTEND;TZID=Asia/Shanghai:20260622T191500
+DTSTART;TZID=Australia/Sydney:20260621T110000
+DTEND;TZID=Asia/Shanghai:20260621T191500
 LOCATION:Sydney to Shanghai
 DESCRIPTION:China Eastern MU562. Booking ref NWN7T4 (Trip.com 11677281716
  17628). E-ticket 781-5468819735. Depart Sydney Airport T1\, arrive Shang
@@ -569,8 +569,8 @@ BEGIN:VEVENT
 UID:transport-01-shanghai-istanbul@sophie-trip
 DTSTAMP:20260620T000000Z
 SUMMARY:Sophie Trip - Shanghai - Istanbul (Flight)
-DTSTART;TZID=Asia/Shanghai:20260623T012000
-DTEND;TZID=Europe/Istanbul:20260623T080000
+DTSTART;TZID=Asia/Shanghai:20260622T012000
+DTEND;TZID=Europe/Istanbul:20260622T080000
 LOCATION:Shanghai to Istanbul
 DESCRIPTION:China Eastern MU703. Booking ref NWN7T4. Depart Shanghai Pudo
  ng Intl T1\, arrive Istanbul Airport. Leg 2 of Sydney to Istanbul.
