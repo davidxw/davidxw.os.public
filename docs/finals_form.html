@@ -1,0 +1,446 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FNSW U23 Finals Run-In | 2026 Form Guide</title>
+  <script>
+    (() => {
+      const param = new URLSearchParams(window.location.search).get("scoutTheme");
+      const theme =
+        param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --cp-bg: #f7f4ef;
+      --cp-bg-elevated: #fcfbf8;
+      --cp-surface: #ffffff;
+      --cp-surface-soft: #f5f5f5;
+      --cp-border: #dedede;
+      --cp-border-strong: #919191;
+      --cp-text: #242424;
+      --cp-text-muted: #5c5c5c;
+      --cp-text-soft: #6f6f6f;
+      --cp-accent: #b11f4b;
+      --cp-accent-hover: #9a1a41;
+      --cp-accent-soft: rgba(177, 31, 75, 0.08);
+      --cp-accent-fg: #ffffff;
+      --cp-success: #16a34a;
+      --cp-danger: #dc2626;
+      --cp-warning: #f59e0b;
+      --cp-link: #0078d4;
+      --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.12);
+      --cp-overlay: rgba(255, 255, 255, 0.8);
+      --cp-panel: rgba(255, 255, 255, 0.86);
+      --cp-panel-strong: rgba(255, 255, 255, 0.96);
+      --cp-sheen: rgba(255, 255, 255, 0.55);
+      --cp-highlight: rgba(177, 31, 75, 0.12);
+    }
+    html[data-theme="dark"] {
+      color-scheme: dark;
+      --cp-bg: #3d3b3a;
+      --cp-bg-elevated: #343231;
+      --cp-surface: #292929;
+      --cp-surface-soft: #2e2e2e;
+      --cp-border: #474747;
+      --cp-border-strong: #5f5f5f;
+      --cp-text: #dedede;
+      --cp-text-muted: #919191;
+      --cp-text-soft: #b0b0b0;
+      --cp-accent: #fd8ea1;
+      --cp-accent-hover: #fb7b91;
+      --cp-accent-soft: rgba(253, 142, 161, 0.14);
+      --cp-accent-fg: #1a1a1a;
+      --cp-success: #4ade80;
+      --cp-danger: #f87171;
+      --cp-warning: #fbbf24;
+      --cp-link: #4da6ff;
+      --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.32);
+      --cp-overlay: rgba(41, 41, 41, 0.88);
+      --cp-panel: rgba(41, 41, 41, 0.72);
+      --cp-panel-strong: rgba(41, 41, 41, 0.96);
+      --cp-sheen: rgba(255, 255, 255, 0.04);
+      --cp-highlight: rgba(253, 142, 161, 0.12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--cp-bg);
+      color: var(--cp-text);
+      font-family: "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.5;
+    }
+    a { color: var(--cp-link); }
+    button { font: inherit; }
+    .shell { max-width: 1180px; margin: 0 auto; padding: 28px 24px 64px; }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 36px;
+      border: 1px solid var(--cp-border);
+      border-radius: 16px;
+      background: var(--cp-surface);
+      box-shadow: 0 0 2px var(--cp-border), 0 1px 2px var(--cp-border);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      right: -100px;
+      top: -135px;
+      border-radius: 50%;
+      background: var(--cp-accent-soft);
+    }
+    .eyebrow {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 12px;
+      color: var(--cp-accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    h1 { position: relative; z-index: 1; max-width: 780px; margin: 0; font-size: clamp(32px, 5vw, 56px); line-height: 1.04; letter-spacing: -.04em; }
+    .hero p { position: relative; z-index: 1; max-width: 760px; margin: 18px 0 0; color: var(--cp-text-muted); font-size: 18px; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+    .pill { padding: 7px 11px; border: 1px solid var(--cp-border); border-radius: 999px; background: var(--cp-bg-elevated); color: var(--cp-text-muted); font-size: 13px; }
+    .nav {
+      position: sticky;
+      top: 12px;
+      z-index: 10;
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      margin: 18px 0 30px;
+      padding: 8px;
+      border: 1px solid var(--cp-border);
+      border-radius: 0.625rem;
+      background: var(--cp-panel-strong);
+      box-shadow: 0 0 2px var(--cp-border), 0 1px 2px var(--cp-border);
+    }
+    .nav button, .team-filter {
+      flex: 0 0 auto;
+      padding: 9px 13px;
+      border: 0;
+      border-radius: 0.625rem;
+      background: transparent;
+      color: var(--cp-text-muted);
+      cursor: pointer;
+    }
+    .nav button:hover, .team-filter:hover { background: var(--cp-accent-soft); color: var(--cp-accent); }
+    section { scroll-margin-top: 92px; margin-top: 42px; }
+    .section-head { display: flex; justify-content: space-between; gap: 20px; align-items: end; margin-bottom: 18px; }
+    h2 { margin: 0; font-size: 27px; letter-spacing: -.02em; }
+    .section-head p { max-width: 620px; margin: 0; color: var(--cp-text-muted); }
+    .grid { display: grid; gap: 16px; }
+    .summary-grid { grid-template-columns: repeat(4, 1fr); }
+    .metric, .card {
+      border: 1px solid var(--cp-border);
+      border-radius: 16px;
+      background: var(--cp-surface);
+      box-shadow: 0 0 2px var(--cp-border), 0 1px 2px var(--cp-border);
+    }
+    .metric { padding: 20px; }
+    .metric strong { display: block; margin: 4px 0; font-size: 28px; }
+    .metric span { color: var(--cp-text-muted); font-size: 13px; }
+    .callout {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 16px;
+      margin-top: 16px;
+      padding: 20px;
+      border: 1px solid var(--cp-accent);
+      border-radius: 16px;
+      background: var(--cp-accent-soft);
+    }
+    .callout-icon { color: var(--cp-accent); font-size: 25px; }
+    .callout h3 { margin: 0 0 4px; }
+    .callout p { margin: 0; color: var(--cp-text-muted); }
+    .table-wrap { overflow-x: auto; border: 1px solid var(--cp-border); border-radius: 16px; background: var(--cp-surface); }
+    table { width: 100%; border-collapse: collapse; min-width: 720px; }
+    th, td { padding: 14px 16px; border-bottom: 1px solid var(--cp-border); text-align: left; white-space: nowrap; }
+    th { color: var(--cp-text-muted); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; }
+    tbody tr:last-child td { border-bottom: 0; }
+    tbody tr:hover { background: var(--cp-surface-soft); }
+    .rank { width: 30px; height: 30px; display: inline-grid; place-items: center; border-radius: 50%; background: var(--cp-surface-soft); font-weight: 700; }
+    .team-name { font-weight: 700; }
+    .chance { min-width: 160px; }
+    .bar { height: 8px; margin-top: 6px; overflow: hidden; border-radius: 999px; background: var(--cp-surface-soft); }
+    .bar > span { display: block; height: 100%; border-radius: inherit; background: var(--cp-accent); }
+    .secured { color: var(--cp-success); font-weight: 700; }
+    .bubble-row { display: flex; gap: 4px; }
+    .form-bubble { width: 25px; height: 25px; display: grid; place-items: center; border-radius: 50%; color: var(--cp-accent-fg); font-size: 11px; font-weight: 800; }
+    .win { background: var(--cp-success); }
+    .draw { background: var(--cp-warning); }
+    .loss { background: var(--cp-danger); }
+    .filters { display: flex; gap: 8px; overflow-x: auto; margin-bottom: 16px; }
+    .team-filter { border: 1px solid var(--cp-border); background: var(--cp-surface); }
+    .team-filter.active { border-color: var(--cp-accent); background: var(--cp-accent); color: var(--cp-accent-fg); }
+    .team-cards { grid-template-columns: repeat(2, 1fr); }
+    .team-card { padding: 22px; transition: opacity .18s ease, transform .18s ease; }
+    .team-card.hidden { display: none; }
+    .team-card-head { display: flex; justify-content: space-between; gap: 16px; align-items: start; }
+    .team-card h3 { margin: 0; font-size: 22px; }
+    .position-note { margin-top: 3px; color: var(--cp-text-muted); font-size: 13px; }
+    .prob {
+      min-width: 74px;
+      padding: 9px;
+      border-radius: 0.625rem;
+      background: var(--cp-accent-soft);
+      color: var(--cp-accent);
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .prob b { display: block; font-size: 21px; }
+    .verdict { margin: 16px 0; padding: 13px 14px; border-left: 3px solid var(--cp-accent); background: var(--cp-surface-soft); color: var(--cp-text-muted); }
+    .subhead { margin: 20px 0 10px; color: var(--cp-text-muted); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .fixture { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid var(--cp-border); }
+    .fixture:first-of-type { border-top: 0; }
+    .fixture strong, .fixture small { display: block; }
+    .fixture small { color: var(--cp-text-muted); }
+    .score { padding: 6px 10px; border-radius: 0.625rem; background: var(--cp-surface-soft); font-family: Consolas, "Courier New", Courier, monospace; font-weight: 700; }
+    .form-line { display: grid; grid-template-columns: 82px 1fr auto; gap: 10px; padding: 7px 0; align-items: center; font-size: 13px; }
+    .form-line span:first-child { color: var(--cp-text-muted); }
+    .form-line b { font-family: Consolas, "Courier New", Courier, monospace; }
+    .fixture-grid { grid-template-columns: repeat(3, 1fr); }
+    .fixture-card { padding: 18px; }
+    .fixture-card.key { border-color: var(--cp-accent); }
+    .fixture-card .tag { color: var(--cp-accent); font-size: 11px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+    .fixture-card h3 { margin: 8px 0 2px; font-size: 17px; }
+    .fixture-card .date { color: var(--cp-text-muted); font-size: 13px; }
+    .odds { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-top: 14px; }
+    .odds div { padding: 8px 4px; border-radius: 0.625rem; background: var(--cp-surface-soft); text-align: center; font-size: 11px; color: var(--cp-text-muted); }
+    .odds b { display: block; color: var(--cp-text); font-size: 15px; }
+    .forecast { grid-template-columns: 1.2fr .8fr; }
+    .forecast .card { padding: 22px; }
+    .scenario { display: grid; grid-template-columns: 36px 1fr; gap: 12px; padding: 13px 0; border-bottom: 1px solid var(--cp-border); }
+    .scenario:last-child { border-bottom: 0; }
+    .scenario-num { width: 31px; height: 31px; display: grid; place-items: center; border-radius: 50%; background: var(--cp-accent-soft); color: var(--cp-accent); font-weight: 800; }
+    .scenario strong { display: block; }
+    .scenario span { color: var(--cp-text-muted); font-size: 13px; }
+    .method { color: var(--cp-text-muted); font-size: 13px; }
+    footer { margin-top: 42px; padding-top: 20px; border-top: 1px solid var(--cp-border); color: var(--cp-text-muted); font-size: 12px; }
+    @media (max-width: 900px) {
+      .summary-grid, .fixture-grid { grid-template-columns: repeat(2, 1fr); }
+      .team-cards, .forecast { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      .shell { padding: 16px 14px 44px; }
+      .hero { padding: 26px 22px; }
+      .summary-grid, .fixture-grid { grid-template-columns: 1fr; }
+      .section-head { display: block; }
+      .section-head p { margin-top: 6px; }
+      .team-card-head { align-items: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="hero">
+      <div class="eyebrow">Football NSW · NPL Women's U23</div>
+      <h1>Two rounds. Five contenders. One place under real pressure.</h1>
+      <p>The top three have one foot in the finals. The run-in is now centred on fourth: APIA's one-point cushion against Sydney University, with a difficult APIA–Wanderers clash likely to swing the race.</p>
+      <div class="hero-meta">
+        <span class="pill">After Round 24</span>
+        <span class="pill">Rounds 25–26 remaining</span>
+        <span class="pill">Updated 17 August 2026</span>
+        <span class="pill">200,000 simulated run-ins</span>
+      </div>
+    </header>
+
+    <nav class="nav" aria-label="Page sections">
+      <button data-scroll="snapshot">Snapshot</button>
+      <button data-scroll="contenders">Contenders</button>
+      <button data-scroll="fixtures">Fixtures</button>
+      <button data-scroll="forecast">Forecast</button>
+      <button data-scroll="method">Method</button>
+    </nav>
+
+    <main>
+      <section id="snapshot">
+        <div class="section-head">
+          <div><div class="eyebrow">Run-in snapshot</div><h2>The state of play</h2></div>
+          <p>Six points remain available. The model sees a 60–40 edge to APIA over Sydney University for the final top-four position.</p>
+        </div>
+        <div class="grid summary-grid">
+          <div class="metric"><span>Title favourite</span><strong>Illawarra</strong><span>70.8% projected to finish first</span></div>
+          <div class="metric"><span>Hottest form</span><strong>Ravens</strong><span>Five straight wins, 11–1 aggregate</span></div>
+          <div class="metric"><span>Fourth-place edge</span><strong>APIA 59.9%</strong><span>One point and seven goals of GD ahead</span></div>
+          <div class="metric"><span>Best outsider path</span><strong>Sydney Uni</strong><span>Two home games to close the season</span></div>
+        </div>
+        <div class="callout">
+          <div class="callout-icon">◆</div>
+          <div>
+            <h3>Key game: APIA Leichhardt v Western Sydney Wanderers</h3>
+            <p>Sunday 23 August, 6:50pm at Lambert Park. APIA urgently need to halt a four-match winless run, while Wanderers can still take top spot. A Wanderers win opens the door for Sydney University before the final round.</p>
+          </div>
+        </div>
+
+        <div class="table-wrap" style="margin-top:16px">
+          <table>
+            <thead><tr><th>Now</th><th>Team</th><th>Pts</th><th>GD</th><th>Recent five</th><th>Top-four chance</th><th>Forecast</th></tr></thead>
+            <tbody>
+              <tr><td><span class="rank">1</span></td><td class="team-name">Illawarra Stingrays</td><td>52</td><td>+24</td><td><div class="bubble-row"><i class="form-bubble win">W</i><i class="form-bubble win">W</i><i class="form-bubble win">W</i><i class="form-bubble win">W</i><i class="form-bubble win">W</i></div></td><td class="chance"><span class="secured">≈100%</span><div class="bar"><span style="width:100%"></span></div></td><td>1st · 56.7 pts</td></tr>
+              <tr><td><span class="rank">2</span></td><td class="team-name">Western Sydney Wanderers</td><td>51</td><td>+35</td><td><div class="bubble-row"><i class="form-bubble win">W</i><i class="form-bubble win">W</i><i class="form-bubble win">W</i><i class="form-bubble loss">L</i><i class="form-bubble win">W</i></div></td><td class="chance"><span class="secured">≈100%</span><div class="bar"><span style="width:100%"></span></div></td><td>2nd · 55.5 pts</td></tr>
+              <tr><td><span class="rank">3</span></td><td class="team-name">Gladesville Ravens</td><td>49</td><td>+17</td><td><div class="bubble-row"><i class="form-bubble win">W</i><i class="form-bubble win">W</i><i class="form-bubble win">W</i><i class="form-bubble win">W</i><i class="form-bubble win">W</i></div></td><td class="chance"><strong>99.6%</strong><div class="bar"><span style="width:99.6%"></span></div></td><td>3rd · 54.3 pts</td></tr>
+              <tr><td><span class="rank">4</span></td><td class="team-name">APIA Leichhardt</td><td>47</td><td>+24</td><td><div class="bubble-row"><i class="form-bubble loss">L</i><i class="form-bubble loss">L</i><i class="form-bubble draw">D</i><i class="form-bubble loss">L</i><i class="form-bubble win">W</i></div></td><td class="chance"><strong>59.9%</strong><div class="bar"><span style="width:59.9%"></span></div></td><td>4th · 49.4 pts</td></tr>
+              <tr><td><span class="rank">5</span></td><td class="team-name">Sydney University</td><td>46</td><td>+17</td><td><div class="bubble-row"><i class="form-bubble loss">L</i><i class="form-bubble win">W</i><i class="form-bubble win">W</i><i class="form-bubble draw">D</i><i class="form-bubble draw">D</i></div></td><td class="chance"><strong>40.6%</strong><div class="bar"><span style="width:40.6%"></span></div></td><td>5th · 49.1 pts</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="contenders">
+        <div class="section-head">
+          <div><div class="eyebrow">Team-by-team</div><h2>Contender form guide</h2></div>
+          <p>Filter the cards, or compare every team's path, prior meetings with their remaining opponents, and pressure points.</p>
+        </div>
+        <div class="filters" aria-label="Filter teams">
+          <button class="team-filter active" data-team="all">All five</button>
+          <button class="team-filter" data-team="illawarra">Illawarra</button>
+          <button class="team-filter" data-team="wanderers">Wanderers</button>
+          <button class="team-filter" data-team="ravens">Ravens</button>
+          <button class="team-filter" data-team="apia">APIA</button>
+          <button class="team-filter" data-team="sydneyuni">Sydney Uni</button>
+        </div>
+        <div class="grid team-cards">
+          <article class="card team-card" data-card="illawarra">
+            <div class="team-card-head"><div><h3>Illawarra Stingrays</h3><div class="position-note">1st · 52 pts · GD +24</div></div><div class="prob"><b>100%</b>top four</div></div>
+            <div class="verdict">Six straight wins and the softest-looking run-in. A first-place finish is the clear favourite; dropping out of the four would require an extreme goal-difference reversal.</div>
+            <div class="subhead">Remaining games · model pick</div>
+            <div class="fixture"><div><strong>at Hills United</strong><small>23 Aug · Won reverse fixture 2–1</small></div><span class="score">2–0 W</span></div>
+            <div class="fixture"><div><strong>v Macarthur Rams</strong><small>30 Aug · Lost reverse fixture 0–1</small></div><span class="score">1–0 W</span></div>
+            <div class="subhead">Last five</div>
+            <div class="form-line"><span>R24</span><span>v APIA</span><b>4–0 W</b></div><div class="form-line"><span>R23</span><span>at Manly</span><b>4–1 W</b></div><div class="form-line"><span>R22</span><span>v Olympic</span><b>1–0 W</b></div><div class="form-line"><span>R21</span><span>at City Rangers</span><b>5–2 W</b></div><div class="form-line"><span>R20</span><span>v NWS Spirit</span><b>3–0 W</b></div>
+          </article>
+
+          <article class="card team-card" data-card="wanderers">
+            <div class="team-card-head"><div><h3>Western Sydney Wanderers</h3><div class="position-note">2nd · 51 pts · GD +35</div></div><div class="prob"><b>100%</b>top four</div></div>
+            <div class="verdict">The league's best goal difference is a valuable virtual extra point. The title remains live, but the trip to APIA is the only major obstacle before a favourable home finale.</div>
+            <div class="subhead">Remaining games · model pick</div>
+            <div class="fixture"><div><strong>at APIA Leichhardt</strong><small>23 Aug · Drew reverse fixture 1–1</small></div><span class="score">1–1 D</span></div>
+            <div class="fixture"><div><strong>v Sydney Olympic</strong><small>30 Aug · Won reverse fixture 6–1</small></div><span class="score">3–0 W</span></div>
+            <div class="subhead">Last five</div>
+            <div class="form-line"><span>R24</span><span>v Sydney Uni</span><b>1–0 W</b></div><div class="form-line"><span>R23</span><span>at NWS Spirit</span><b>4–2 W</b></div><div class="form-line"><span>R22</span><span>v City Rangers</span><b>9–0 W</b></div><div class="form-line"><span>R21</span><span>at Manly</span><b>0–1 L</b></div><div class="form-line"><span>R20</span><span>v Bulls Academy</span><b>1–0 W</b></div>
+          </article>
+
+          <article class="card team-card" data-card="ravens">
+            <div class="team-card-head"><div><h3>Gladesville Ravens</h3><div class="position-note">3rd · 49 pts · GD +17</div></div><div class="prob"><b>99.6%</b>top four</div></div>
+            <div class="verdict">The form team: five wins, one goal conceded, and both remaining opponents beaten comfortably in the reverse fixtures. Third is the modal finish, with second still very realistic.</div>
+            <div class="subhead">Remaining games · model pick</div>
+            <div class="fixture"><div><strong>at Sydney Olympic</strong><small>23 Aug · Won reverse fixture 2–0</small></div><span class="score">2–0 W</span></div>
+            <div class="fixture"><div><strong>v NWS Spirit</strong><small>27 Aug · Won reverse fixture 3–1</small></div><span class="score">3–0 W</span></div>
+            <div class="subhead">Last five</div>
+            <div class="form-line"><span>R24</span><span>v Hills</span><b>1–0 W</b></div><div class="form-line"><span>R23</span><span>at APIA</span><b>2–1 W</b></div><div class="form-line"><span>R22</span><span>v Macarthur</span><b>2–0 W</b></div><div class="form-line"><span>R21</span><span>at Bulls Academy</span><b>2–0 W</b></div><div class="form-line"><span>R20</span><span>v UNSW</span><b>4–0 W</b></div>
+          </article>
+
+          <article class="card team-card" data-card="apia">
+            <div class="team-card-head"><div><h3>APIA Leichhardt</h3><div class="position-note">4th · 47 pts · GD +24</div></div><div class="prob"><b>59.9%</b>top four</div></div>
+            <div class="verdict">The points and goal-difference cushion matter, but form has collapsed: one point and one goal from four games. Avoiding defeat to Wanderers would materially strengthen their grip on fourth.</div>
+            <div class="subhead">Remaining games · model pick</div>
+            <div class="fixture"><div><strong>v Western Sydney Wanderers</strong><small>23 Aug · Drew reverse fixture 1–1</small></div><span class="score">1–1 D</span></div>
+            <div class="fixture"><div><strong>at Northern Tigers</strong><small>29 Aug · Won reverse fixture 2–1</small></div><span class="score">1–1 D</span></div>
+            <div class="subhead">Last five</div>
+            <div class="form-line"><span>R24</span><span>at Illawarra</span><b>0–4 L</b></div><div class="form-line"><span>R23</span><span>v Ravens</span><b>1–2 L</b></div><div class="form-line"><span>R22</span><span>v Bulls Academy</span><b>0–0 D</b></div><div class="form-line"><span>R21</span><span>at UNSW</span><b>0–1 L</b></div><div class="form-line"><span>R20</span><span>at Olympic</span><b>6–0 W</b></div>
+          </article>
+
+          <article class="card team-card" data-card="sydneyuni">
+            <div class="team-card-head"><div><h3>Sydney University</h3><div class="position-note">5th · 46 pts · GD +17</div></div><div class="prob"><b>40.6%</b>top four</div></div>
+            <div class="verdict">Two home matches keep the door open, but neither is easy: Sydney Uni lost 3–2 at UNSW and drew 1–1 at Manly. Four points may be enough; six would put APIA under maximum pressure.</div>
+            <div class="subhead">Remaining games · model pick</div>
+            <div class="fixture"><div><strong>v UNSW</strong><small>23 Aug · Lost reverse fixture 2–3</small></div><span class="score">1–0 W</span></div>
+            <div class="fixture"><div><strong>v Manly United</strong><small>30 Aug · Drew reverse fixture 1–1</small></div><span class="score">1–1 D</span></div>
+            <div class="subhead">Last five</div>
+            <div class="form-line"><span>R24</span><span>at Wanderers</span><b>0–1 L</b></div><div class="form-line"><span>R23</span><span>at Bulls Academy</span><b>2–1 W</b></div><div class="form-line"><span>R22</span><span>v NWS Spirit</span><b>1–0 W</b></div><div class="form-line"><span>R21</span><span>v Northern Tigers</span><b>0–0 D</b></div><div class="form-line"><span>R20</span><span>at Macarthur</span><b>1–1 D</b></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="fixtures">
+        <div class="section-head">
+          <div><div class="eyebrow">Match probabilities</div><h2>The nine decisive fixtures</h2></div>
+          <p>Percentages are model estimates for home win, draw and away win. The displayed score is the most likely single scoreline—not a certainty.</p>
+        </div>
+        <div class="grid fixture-grid">
+          <article class="card fixture-card"><div class="tag">R25</div><h3>Hills v Illawarra</h3><div class="date">23 Aug · 3:30pm</div><div class="odds"><div><b>6.6%</b>Home</div><div><b>16.9%</b>Draw</div><div><b>76.5%</b>Away</div></div></article>
+          <article class="card fixture-card key"><div class="tag">Key game · R25</div><h3>APIA v Wanderers</h3><div class="date">23 Aug · 6:50pm</div><div class="odds"><div><b>26.5%</b>Home</div><div><b>24.3%</b>Draw</div><div><b>49.2%</b>Away</div></div></article>
+          <article class="card fixture-card"><div class="tag">R25</div><h3>Olympic v Ravens</h3><div class="date">23 Aug · 7:40pm</div><div class="odds"><div><b>3.9%</b>Home</div><div><b>10.5%</b>Draw</div><div><b>85.4%</b>Away</div></div></article>
+          <article class="card fixture-card key"><div class="tag">Fourth-place watch · R25</div><h3>Sydney Uni v UNSW</h3><div class="date">23 Aug · 3:00pm</div><div class="odds"><div><b>50.8%</b>Home</div><div><b>25.2%</b>Draw</div><div><b>24.0%</b>Away</div></div></article>
+          <article class="card fixture-card"><div class="tag">R26</div><h3>Ravens v NWS Spirit</h3><div class="date">27 Aug · 6:00pm</div><div class="odds"><div><b>84.6%</b>Home</div><div><b>9.7%</b>Draw</div><div><b>5.5%</b>Away</div></div></article>
+          <article class="card fixture-card key"><div class="tag">Potential decider · R26</div><h3>Northern Tigers v APIA</h3><div class="date">29 Aug · 4:30pm</div><div class="odds"><div><b>37.6%</b>Home</div><div><b>27.5%</b>Draw</div><div><b>35.0%</b>Away</div></div></article>
+          <article class="card fixture-card"><div class="tag">R26</div><h3>Wanderers v Olympic</h3><div class="date">30 Aug · 3:00pm</div><div class="odds"><div><b>91.3%</b>Home</div><div><b>6.3%</b>Draw</div><div><b>2.0%</b>Away</div></div></article>
+          <article class="card fixture-card key"><div class="tag">Potential decider · R26</div><h3>Sydney Uni v Manly</h3><div class="date">30 Aug · 3:00pm</div><div class="odds"><div><b>35.6%</b>Home</div><div><b>30.0%</b>Draw</div><div><b>34.3%</b>Away</div></div></article>
+          <article class="card fixture-card"><div class="tag">R26</div><h3>Illawarra v Macarthur</h3><div class="date">30 Aug · 5:00pm</div><div class="odds"><div><b>69.1%</b>Home</div><div><b>19.9%</b>Draw</div><div><b>10.9%</b>Away</div></div></article>
+        </div>
+      </section>
+
+      <section id="forecast">
+        <div class="section-head">
+          <div><div class="eyebrow">Final whistle forecast</div><h2>Likely finishing order</h2></div>
+          <p>The top three separate clearly. Fourth and fifth finish almost level on expected points, but APIA's current advantage makes them more likely to hold on.</p>
+        </div>
+        <div class="grid forecast">
+          <div class="card">
+            <div class="table-wrap" style="border:0">
+              <table style="min-width:0">
+                <thead><tr><th>Pred.</th><th>Team</th><th>Expected pts</th><th>Most likely position</th></tr></thead>
+                <tbody>
+                  <tr><td><span class="rank">1</span></td><td class="team-name">Illawarra Stingrays</td><td>56.7</td><td>1st · 70.8%</td></tr>
+                  <tr><td><span class="rank">2</span></td><td class="team-name">Western Sydney Wanderers</td><td>55.5</td><td>2nd · 52.5%</td></tr>
+                  <tr><td><span class="rank">3</span></td><td class="team-name">Gladesville Ravens</td><td>54.3</td><td>3rd · 68.1%</td></tr>
+                  <tr><td><span class="rank">4</span></td><td class="team-name">APIA Leichhardt</td><td>49.4</td><td>4th · 56.0%</td></tr>
+                  <tr><td><span class="rank">5</span></td><td class="team-name">Sydney University</td><td>49.1</td><td>5th · 59.4%</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="subhead" style="margin-top:0">What decides fourth?</div>
+            <div class="scenario"><div class="scenario-num">1</div><div><strong>APIA reach 51 points</strong><span>That likely forces Sydney Uni to win both because APIA hold the stronger current goal difference.</span></div></div>
+            <div class="scenario"><div class="scenario-num">2</div><div><strong>APIA take two points or fewer</strong><span>A Sydney Uni win plus a draw would probably be enough to jump them.</span></div></div>
+            <div class="scenario"><div class="scenario-num">3</div><div><strong>Round 25 can flip the race</strong><span>Sydney Uni play first. A home win over UNSW followed by an APIA loss puts Uni two points ahead.</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="method">
+        <div class="section-head">
+          <div><div class="eyebrow">How to read this</div><h2>Model and sources</h2></div>
+        </div>
+        <div class="card" style="padding:22px">
+          <p class="method">The guide uses all 168 completed league matches through Round 24, current points/goal difference, season attack and defence, home/away splits, and a light recent-five weighting. Fixture score probabilities come from a regularised Poisson model. Top-four and finishing probabilities come from 200,000 seeded simulations of the remaining nine fixtures involving the contenders, ranking teams by points, goal difference and goals scored. Estimates are analytical—not official odds—and team availability, suspensions and late fixture changes are not included.</p>
+          <p class="method">Sources: Football NSW Dribl <a href="https://competitions.footballnsw.com.au/ladders/?date_range=default&amp;season=wOmelzGd02&amp;competition=6lNbppMgdx&amp;ladder_type=regular&amp;league=7MNGRGw7mA&amp;timezone=Australia%2FSydney">ladder</a>, <a href="https://competitions.footballnsw.com.au/fixtures?season=wOmelzGd02&amp;competition=6lNbppMgdx&amp;league=7MNGRGw7mA&amp;date_range=default&amp;timezone=Australia%2FSydney">fixtures</a> and <a href="https://competitions.footballnsw.com.au/results/?season=wOmelzGd02&amp;competition=6lNbppMgdx&amp;league=7MNGRGw7mA&amp;date_range=default&amp;timezone=Australia%2FSydney">results</a>, accessed 17 August 2026.</p>
+        </div>
+      </section>
+    </main>
+    <footer>FNSW NPL Women's U23 · 2026 regular-season run-in guide · Data current after Round 24</footer>
+  </div>
+  <script>
+    document.querySelectorAll("[data-scroll]").forEach(button => {
+      button.addEventListener("click", () => {
+        document.getElementById(button.dataset.scroll).scrollIntoView({ behavior: "smooth" });
+      });
+    });
+    const filters = document.querySelectorAll(".team-filter");
+    const cards = document.querySelectorAll(".team-card");
+    filters.forEach(button => {
+      button.addEventListener("click", () => {
+        filters.forEach(item => item.classList.remove("active"));
+        button.classList.add("active");
+        cards.forEach(card => {
+          card.classList.toggle("hidden", button.dataset.team !== "all" && card.dataset.card !== button.dataset.team);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
