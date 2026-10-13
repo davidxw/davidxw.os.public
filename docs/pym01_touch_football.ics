@@ -1,0 +1,95 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//davidxw.os//PYM01 Touch Football//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Holly - Pymble Senior Touch Football (PYM01)
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VTIMEZONE
+TZID:Australia/Sydney
+BEGIN:STANDARD
+DTSTART:19700405T030000
+RRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU
+TZOFFSETFROM:+1100
+TZOFFSETTO:+1000
+TZNAME:AEST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19701004T020000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=1SU
+TZOFFSETFROM:+1000
+TZOFFSETTO:+1100
+TZNAME:AEDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:pym01-touch-2026-01@davidxw.os
+DTSTAMP:20261013T000000Z
+DTSTART;TZID=Australia/Sydney:20261017T090000
+DTEND;TZID=Australia/Sydney:20261017T100000
+SUMMARY:Holly - Pymble Senior Touch Football vs BRI01-Touch Football
+LOCATION:Pymble Kelso
+CATEGORIES:PYM01
+DESCRIPTION:PYM01-Touch Football vs BRI01-Touch Football\nVenue: Pymble Ladies' College Kelso\nCourt: Pymble Kelso\nTime: 9:00AM (1 hour)\n\nOpposition / Team Profile: https://igsasport.spawtz.com/Leagues/TeamProfile?VenueId=0&TeamId=3512&LeagueId=8&SeasonId=25&DivisionId=2301\n\nPYM01_import
+END:VEVENT
+BEGIN:VEVENT
+UID:pym01-touch-2026-02@davidxw.os
+DTSTAMP:20261013T000000Z
+DTSTART;TZID=Australia/Sydney:20261024T090000
+DTEND;TZID=Australia/Sydney:20261024T100000
+SUMMARY:Holly - Pymble Senior Touch Football vs ROS01-Touch Football
+LOCATION:SASR Oval 2 Field 1
+CATEGORIES:PYM01
+DESCRIPTION:PYM01-Touch Football vs ROS01-Touch Football\nVenue: Sydney Academy of Sport & Rec\nCourt: SASR Oval 2 Field 1\nTime: 9:00AM (1 hour)\n\nOpposition / Team Profile: https://igsasport.spawtz.com/Leagues/TeamProfile?VenueId=0&TeamId=3512&LeagueId=8&SeasonId=25&DivisionId=2301\n\nPYM01_import
+END:VEVENT
+BEGIN:VEVENT
+UID:pym01-touch-2026-03@davidxw.os
+DTSTAMP:20261013T000000Z
+DTSTART;TZID=Australia/Sydney:20261031T090000
+DTEND;TZID=Australia/Sydney:20261031T100000
+SUMMARY:Holly - Pymble Senior Touch Football vs MON01-Touch Football
+LOCATION:Pymble Kelso
+CATEGORIES:PYM01
+DESCRIPTION:PYM01-Touch Football vs MON01-Touch Football\nVenue: Pymble Ladies' College Kelso\nCourt: Pymble Kelso\nTime: 9:00AM (1 hour)\n\nOpposition / Team Profile: https://igsasport.spawtz.com/Leagues/TeamProfile?VenueId=0&TeamId=3512&LeagueId=8&SeasonId=25&DivisionId=2301\n\nPYM01_import
+END:VEVENT
+BEGIN:VEVENT
+UID:pym01-touch-2026-04@davidxw.os
+DTSTAMP:20261013T000000Z
+DTSTART;TZID=Australia/Sydney:20261107T090000
+DTEND;TZID=Australia/Sydney:20261107T100000
+SUMMARY:Holly - Pymble Senior Touch Football vs WEN01-Touch Football
+LOCATION:Pymble Kelso
+CATEGORIES:PYM01
+DESCRIPTION:PYM01-Touch Football vs WEN01-Touch Football\nVenue: Pymble Ladies' College Kelso\nCourt: Pymble Kelso\nTime: 9:00AM (1 hour)\n\nOpposition / Team Profile: https://igsasport.spawtz.com/Leagues/TeamProfile?VenueId=0&TeamId=3512&LeagueId=8&SeasonId=25&DivisionId=2301\n\nPYM01_import
+END:VEVENT
+BEGIN:VEVENT
+UID:pym01-touch-2026-05@davidxw.os
+DTSTAMP:20261013T000000Z
+DTSTART;TZID=Australia/Sydney:20261114T090000
+DTEND;TZID=Australia/Sydney:20261114T100000
+SUMMARY:Holly - Pymble Senior Touch Football vs ASC01-Touch Football
+LOCATION:Pymble Kelso
+CATEGORIES:PYM01
+DESCRIPTION:PYM01-Touch Football vs ASC01-Touch Football\nVenue: Pymble Ladies' College Kelso\nCourt: Pymble Kelso\nTime: 9:00AM (1 hour)\n\nOpposition / Team Profile: https://igsasport.spawtz.com/Leagues/TeamProfile?VenueId=0&TeamId=3512&LeagueId=8&SeasonId=25&DivisionId=2301\n\nPYM01_import
+END:VEVENT
+BEGIN:VEVENT
+UID:pym01-touch-2026-06@davidxw.os
+DTSTAMP:20261013T000000Z
+DTSTART;TZID=Australia/Sydney:20261114T110000
+DTEND;TZID=Australia/Sydney:20261114T120000
+SUMMARY:Holly - Pymble Senior Touch Football vs FRE01-Touch Football
+LOCATION:Pymble Kelso
+CATEGORIES:PYM01
+DESCRIPTION:PYM01-Touch Football vs FRE01-Touch Football\nVenue: Pymble Ladies' College Kelso\nCourt: Pymble Kelso\nTime: 11:00AM (1 hour)\n\nOpposition / Team Profile: https://igsasport.spawtz.com/Leagues/TeamProfile?VenueId=0&TeamId=3512&LeagueId=8&SeasonId=25&DivisionId=2301\n\nPYM01_import
+END:VEVENT
+BEGIN:VEVENT
+UID:pym01-touch-2026-07@davidxw.os
+DTSTAMP:20261013T000000Z
+DTSTART;TZID=Australia/Sydney:20261121T090000
+DTEND;TZID=Australia/Sydney:20261121T100000
+SUMMARY:Holly - Pymble Senior Touch Football vs PLS01-Touch Football
+LOCATION:PLC Sydney Grass
+CATEGORIES:PYM01
+DESCRIPTION:PYM01-Touch Football vs PLS01-Touch Football\nVenue: PLC Sydney Grass\nCourt: PLC Sydney Grass\nTime: 9:00AM (1 hour)\n\nOpposition / Team Profile: https://igsasport.spawtz.com/Leagues/TeamProfile?VenueId=0&TeamId=3512&LeagueId=8&SeasonId=25&DivisionId=2301\n\nPYM01_import
+END:VEVENT
+END:VCALENDAR
